@@ -1,0 +1,1 @@
+javah -classpath /home/recep/workspace/BB_PROJECT/bin org.embedded.beaglebone.driver.kernel.chardev.BBNative
