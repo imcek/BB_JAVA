@@ -1,7 +1,5 @@
 package org.embedded.beaglebone.main;
 
-import java.util.Scanner;
-
 import org.embedded.beaglebone.constants.BBGpio;
 import org.embedded.beaglebone.driver.kernel.chardev.BBNative;
 
@@ -63,20 +61,6 @@ public class BBMain {
 			e.printStackTrace();
 		}
 		first.gpioSetValue(BBGpio.GPIO_44, BBGpio.LOW);
-		
-		Scanner scan= new Scanner(System.in);
-
-	    //For string
-
-	    String text= scan.nextLine();
-
-	    System.out.println(text);
-
-	    //for int
-
-	    int num= scan.nextInt();
-
-	    System.out.println(num);
 		
 		first.shutDown();
 		
