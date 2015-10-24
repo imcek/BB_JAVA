@@ -8,7 +8,7 @@ private static ResourceBundle bundle;
 
 	public static String getMessage(String key){
 		if(bundle==null) {
-			bundle = ResourceBundle.getBundle("org.embedded.beaglebone.messages.messages");
+			bundle = ResourceBundle.getBundle("org.gradle.properties.messages");
 		}
 		return bundle.getString(key);
 	}
